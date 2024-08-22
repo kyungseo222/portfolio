@@ -1065,7 +1065,7 @@ section .inner{
         font-size: 14px;
     }
     .main_visual .inner p{
-        top: 345px;
+        top: 300px;
     }
     .main_visual .inner .text h5{
         font-size: 15px;
@@ -1084,7 +1084,7 @@ section .inner{
         font-size: 16px;
     }
     .main_visual .inner > span{
-        bottom: 345px;
+        bottom: 300px;
     }
     .about .inner .list{
         display: block;
