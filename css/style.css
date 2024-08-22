@@ -169,7 +169,25 @@ section .inner{
     height: 100vh;
     position: relative;
 }
-.main_visual .inner p{
+.main_visual .inner .main_qr{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.main_visual .inner .main_qr figure{
+    width: 10.9rem;
+    height: 10.9rem;
+    margin-bottom: 10px;
+}
+.main_visual .inner .main_qr figure img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.main_visual .inner .main_qr p{
+    font-size: 1.5rem;
+}
+.main_visual .inner > p{
     position: absolute;
     top: 15rem;
     left: 0;
@@ -1065,7 +1083,7 @@ section .inner{
         font-size: 14px;
     }
     .main_visual .inner p{
-        top: 300px;
+        top: 250px;
     }
     .main_visual .inner .text h5{
         font-size: 15px;
@@ -1084,7 +1102,7 @@ section .inner{
         font-size: 16px;
     }
     .main_visual .inner > span{
-        bottom: 300px;
+        bottom: 250px;
     }
     .about .inner .list{
         display: block;
