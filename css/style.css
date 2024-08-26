@@ -498,12 +498,11 @@ section .inner{
     color: #fff;
     transition: 0.7s;
 }
-.project .inner .btn01 .list .item .right .qr .btn a.on{
-    background-color: var(--main-color);
-    color: #fff;
+.project .inner .btn01 .list .item .right .qr .btn > a.on{
+    transform: scale(1.1);
     transition: 0.7s;
 }
-.project .inner .btn01 .list .item .right .qr .btn a{
+.project .inner .btn01 .list .item .right .qr .btn > a{
     width: 24.5rem;
     height: 4.5rem;
     border: 1px solid #838383;
@@ -512,6 +511,9 @@ section .inner{
     justify-content: center;
     align-items: center;
     font-size: 1.5rem;
+    background-color: var(--main-color);
+    color: #fff;
+    transition: 0.7s;
 }
 
 .project .inner .btn01 .list .item .right01{
@@ -594,12 +596,11 @@ section .inner{
     color: #fff;
     transition: 0.7s;
 }
-.project .inner .btn01 .list .item .right01 .qr .btn a.on{
-    background-color: var(--main-color);
-    color: #fff;
+.project .inner .btn01 .list .item .right01 .qr .btn > a.on{
+    transform: scale(1.1);
     transition: 0.7s;
 }
-.project .inner .btn01 .list .item .right01 .qr .btn a{
+.project .inner .btn01 .list .item .right01 .qr .btn > a{
     width: 29rem;
     height: 5.5rem;
     border: 1px solid #838383;
@@ -608,6 +609,14 @@ section .inner{
     justify-content: center;
     align-items: center;
     font-size: 1.5rem;
+    background-color: var(--main-color);
+    color: #fff;
+    transition: 0.7s;
+}
+.project .inner .btn01 .list .item:last-child .right01 .qr .btn > a{
+    border: 1px solid #838383;
+    background-color: #fff;
+    color: #333;
 }
 
 .project .inner .btn01 .list .item01{
@@ -672,61 +681,44 @@ section .inner{
     gap: 1.7rem;
     margin-top: 4rem;
 }
-.project .inner .btn01 .list .item01 .right .qr .qr_img figure{
-    width: 109px;
-    height: 109px;
+.project .inner .btn01 .list .item01 .right .qr .btn .btn_flex{
+    display: flex;
+    gap: 8px;
+    margin-bottom: 1.4rem;
 }
-.project .inner .btn01 .list .item01 .right .qr .qr_img figure img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-.project .inner .btn01 .list .item01 .right .qr .qr_img p{
-    font-size: 1.5rem;
-    text-align: center;
-    margin-top: 1rem;
-}
-.project .inner .btn01 .list .item01 .right .qr .btn a{
-    width: 24.5rem;
+.project .inner .btn01 .list .item01 .right .qr .btn .btn_flex a{
+    width: 14rem;
     height: 4.5rem;
     border: 1px solid #838383;
     border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 1.4rem;
     font-size: 1.5rem;
-    row-gap: 1.4rem;
     transition: 0.7s;
 }
-.project .inner .btn01 .list .item01 .right .qr .btn a.on{
+.project .inner .btn01 .list .item01 .right .qr .btn .btn_flex a.on{
     background-color: var(--main-color);
     color: #fff;
     transition: 0.7s;
 }
-/* .project .inner .btn01 .list .item::before{
-    content: 'web';
-    color: #dfdfdf4b;
-    font-size: 50rem;
-    font-weight: bold;
-    position: absolute;
-    bottom: -10%;
-    left: 40%;
-    z-index: -1;
-    overflow: hidden;
+.project .inner .btn01 .list .item01 .right .qr .btn > a.on{
+    transform: scale(1.1);
+    transition: 0.7s;
 }
-.project .inner .btn01 .list .item01::before{
-    content: 'MOBILE';
-    width: 1920px;
-    color: #dfdfdf4b;
-    font-size: 50rem;
-    font-weight: bold;
-    position: absolute;
-    bottom: -10%;
-    left: 40%;
-    z-index: -1;
-    overflow: hidden;
-} */
+.project .inner .btn01 .list .item01 .right .qr .btn > a{
+    width: 29rem;
+    height: 5.5rem;
+    border: 1px solid #838383;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    background-color: var(--main-color);
+    color: #fff;
+    transition: 0.7s;
+}
 
 .project .inner .btn01 .list .item .right01 h3{
     font-size: 3.2rem;
@@ -764,7 +756,7 @@ section .inner{
     row-gap: 2rem;
 }
 .graphic .inner .list a{
-    width: 40rem;
+    width: 30%;
     height: 40rem;
     border-radius: 20px;
     overflow: hidden;
@@ -780,7 +772,7 @@ section .inner{
     top: 5%;
     right: 5%;
 }
-.graphic .inner .list a:nth-child(9)::after{
+.graphic .inner .list a:nth-child(8)~::after{
     width: 5.5rem;
     height: 5.5rem;
     background-image: url(/img/일러스트로고.png);
@@ -940,8 +932,7 @@ section .inner{
         height: 35vw;
     }
     .graphic .inner .list a{
-        width: 30rem;
-        height: 30rem;
+        height: 35rem;
     }
 }
 
@@ -1067,17 +1058,36 @@ section .inner{
         width: 38px;
         height: 38px;
     }
-}
-@media screen and (max-width:650px){
     .graphic .inner .list a{
-        width: 200px;
+        width: 30%;
         height: 200px;
+    }
+} /* 650 */
+@media screen and (max-width:550px){
+    .main_visual .inner .text h5{
+        font-size: 20px;
+    }
+    .main_visual .inner .text h2{
+        font-size: 75px;
+    }
+    .main_visual .inner .text h4{
+        font-size: 20px;
+        margin-top: 20px;
+    }
+    .main_visual .inner .text h2::before{
+        width: 20px;
+        height: 20px;
+        bottom: 10px;
+        right: -30px;
     }
 }
 
 @media screen and (max-width:390px){
     html{
         font-size: 37.5%;
+    }
+    .header{
+        height: 80px;
     }
     .header .inner .mobile_nav ul li{
         font-size: 14px;
@@ -1172,10 +1182,10 @@ section .inner{
         width: 100%;
     }
     .project .inner .btn01 .list .item .right .text .text01 span{
-        font-size: 15px;
+        font-size: 17px;
     }
     .project .inner .btn01 .list .item .right .text .text02 p{
-        font-size: 13px;
+        font-size: 15px;
     }
     .project .inner .btn01 .list .item .right .text .text02{
         row-gap: 15px;
@@ -1196,6 +1206,7 @@ section .inner{
     .project .inner .btn01 .list .item .right .qr{
         align-items: center;
         /* justify-content: center; */
+        margin-top: 40px;
     }
     
     .project .inner .btn01 .list .item .right01 > figure{
@@ -1205,10 +1216,10 @@ section .inner{
         width: 100%;
     }
     .project .inner .btn01 .list .item .right01 .text .text01 span{
-        font-size: 15px;
+        font-size: 17px;
     }
     .project .inner .btn01 .list .item .right01 .text .text02 p{
-        font-size: 13px;
+        font-size: 15px;
     }
     .project .inner .btn01 .list .item .right01 .text .text02{
         row-gap: 15px;
@@ -1229,6 +1240,7 @@ section .inner{
     .project .inner .btn01 .list .item .right01 .qr{
         align-items: center;
         /* justify-content: center; */
+        margin-top: 40px;
     }
     .project .inner .btn01 .list .item01 .left{
         width: 95%;
@@ -1244,10 +1256,10 @@ section .inner{
         margin-bottom: 12px;
     }
     .project .inner .btn01 .list .item01 .right .text .text01 span{
-        font-size: 15px;
+        font-size: 17px;
     }
     .project .inner .btn01 .list .item01 .right .text .text02 p{
-        font-size: 13px;
+        font-size: 15px;
     }
     .project .inner .btn01 .list .item01 .right .text .text02{
         row-gap: 15px;
@@ -1255,20 +1267,26 @@ section .inner{
     .project .inner .btn01 .list .item01 .right .qr .qr_img p{
         font-size: 12px;
     }
+    .project .inner .btn01 .list .item01 .right .qr .btn .btn_flex a{
+        width: 150px;
+        height: 45px;
+        font-size: 13px;
+    }
     .project .inner .btn01 .list .item01 .right .qr .btn a{
-        width: 210px;
-        height: 40px;
-        font-size: 12px;
+        width: 308px;
+        height: 45px;
+        font-size: 13px;
     }
     .project .inner .btn01 .list .item01 .right .qr{
         align-items: center;
+        margin-top: 40px;
     }
 
     .project .inner .btn01 .list .item .left01{
         width: 95%;
     }
     .graphic .inner .list a{
-        width: 170px;
+        width: 48%;
         height: 170px;
     }
 
@@ -1304,10 +1322,10 @@ section .inner{
     .graphic .inner .list{
         gap: 10px;
     }
-    .graphic .inner .list a{
+    /* .graphic .inner .list a{
         width: 150px;
         height: 150px;
-    }
+    } */
 }
 @media screen and (max-width:345px){
     .project .inner .btn01 .list .item .right .qr .btn .btn_flex a{
@@ -1324,17 +1342,5 @@ section .inner{
     }
     .project .inner .btn01 .list .item .right01 .qr .btn a{
         width: 300px;
-    }
-}
-@media screen and (max-width:340px){
-    .graphic .inner .list a{
-        width: 145px;
-        height: 145px;
-    }
-}
-@media screen and (max-width:320px){
-    .graphic .inner .list a{
-        width: 140px;
-        height: 140px;
     }
 }
