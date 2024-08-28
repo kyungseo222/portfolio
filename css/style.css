@@ -1235,6 +1235,11 @@ section .inner{
         height: 45px;
         font-size: 13px;
     }
+    .project .inner .btn01 .list .item .right .qr .btn .btn_flex01 a{
+        width: 308px;
+        height: 45px;
+        font-size: 13px;
+    }
     .project .inner .btn01 .list .item .right .qr{
         align-items: center;
         /* justify-content: center; */
@@ -1370,18 +1375,24 @@ section .inner{
 }
 @media screen and (max-width:345px){
     .project .inner .btn01 .list .item .right .qr .btn .btn_flex a{
-        width: 85px;
+        width: 145px;
+    }
+    .project .inner .btn01 .list .item .right .qr .btn .btn_flex01 a{
+        width: 300px;
     }
     .project .inner .btn01 .list .item .right .qr .btn a{
-        width: 180px;
+        width: 300px;
     }
     .project .inner .btn01 .list .item01 .right .qr .btn a{
-        width: 180px;
+        width: 300px;
     }
     .project .inner .btn01 .list .item .right01 .qr .btn .btn_flex a{
         width: 145px;
     }
     .project .inner .btn01 .list .item .right01 .qr .btn a{
         width: 300px;
+    }
+    .project .inner .btn01 .list .item01 .right .qr .btn .btn_flex a{
+        width: 145px;
     }
 }
