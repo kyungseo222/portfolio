@@ -754,6 +754,23 @@ section .inner{
     height: 100%;
     object-fit: cover;
 }
+.project .inner .btn01 .list .item .right .qr .btn .btn_flex01 a{
+    width: 24.5rem;
+    height: 4.5rem;
+    border: 1px solid #838383;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    transition: 0.7s;
+    margin-bottom: 1.4rem;
+}
+.project .inner .btn01 .list .item .right .qr .btn .btn_flex01 a.on{
+    background-color: var(--main-color);
+    color: #fff;
+    transition: 0.7s;
+}
 
 .graphic .inner h2{
     font-family: var(--eng-font);
