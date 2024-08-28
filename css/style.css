@@ -799,7 +799,7 @@ section .inner{
     content: '';
     width: 5rem;
     height: 5rem;
-    background: url(/img/포토샵로고.png)center center / 100% no-repeat;
+    background: url(../img/포토샵로고.png)center center / 100% no-repeat;
     position: absolute;
     top: 5%;
     right: 5%;
@@ -807,7 +807,7 @@ section .inner{
 .graphic .inner .list a:nth-child(8)~::after{
     width: 5.5rem;
     height: 5.5rem;
-    background-image: url(/img/일러스트로고.png);
+    background-image: url(../img/일러스트로고.png);
 }
 .graphic .inner .list a img{
     width: 100%;
