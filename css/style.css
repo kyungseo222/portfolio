@@ -1124,6 +1124,9 @@ section .inner{
     .header .inner .mobile_nav ul li{
         font-size: 14px;
     }
+    .main_visual .inner .main_qr{
+        display: none;
+    }
     .main_visual .inner p{
         top: 250px;
     }
